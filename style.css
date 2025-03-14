@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white; 
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.6;
+    color:white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color:black; 
+    color:white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color:black;
+}
+
+
+main {
+    background-color: grey;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+}
+
+
+header + main {
+    border-top: none;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: white; 
+    margin-bottom: 20px;
+    font-size: 2em;
+    border-bottom: 2px solid white; 
+    padding-bottom: 10px;
+}
+
+h3 {
+    color:white;
+    margin-left: auto; 
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: white; 
+    margin-left: 315px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+.profile-image, .secondary-image {
+    max-width: 300px;
+    width: 300px; 
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    float: left;
+    margin: 0 20px 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid white; 
+    object-fit: cover; 
+}
+
+
+.intro, .why-drawing {
+    overflow: auto; 
+    margin-bottom: 30px;
+}
+
+.intro-text, .why-drawing-text {
+    overflow: hidden; 
+}
+
+
+.benefits-list {
+    list-style-type: square; 
+    margin-left: 330px;
+    margin-top: 15px;
+}
+
+.benefits-list li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: white; 
+}
+
+
+.contact-page h2 {
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    margin: 30px 0;
+    background-color: grey; 
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid white; 
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+
+.contact {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .profile-image, .secondary-image {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
